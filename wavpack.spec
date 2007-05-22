@@ -1,5 +1,5 @@
 %define name wavpack
-%define version 4.40.0
+%define version 4.41.0
 %define release %mkrel 1
 
 %define major 1
