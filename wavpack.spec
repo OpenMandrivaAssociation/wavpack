@@ -20,7 +20,6 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libncurses-devel
 
 %description
-
 WavPack is a completely open audio compression format providing
 lossless, high-quality lossy, and a unique hybrid compression
 mode. Although the technology is loosely based on previous versions of
