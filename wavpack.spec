@@ -69,13 +69,14 @@ the lossy file) provides full lossless restoration. For some users
 this means never having to choose between lossless and lossy
 compression!
 
-%package -n %libname-devel
+%package -n %mklibname -d %name
 Group: Development/C
 Summary: Lossless Audio compression library
 Provides: lib%name-devel = %version-%release
+Obsoletes: %mklibname -d %name 1
 Requires: %libname = %version
 
-%description -n %libname-devel
+%description -n %mklibname -d %name
 WavPack is a completely open audio compression format providing
 lossless, high-quality lossy, and a unique hybrid compression
 mode. Although the technology is loosely based on previous versions of
@@ -126,7 +127,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %_libdir/lib*.so.%{major}*
 
-%files -n %libname-devel
+%files -n %mklibname -d %name
 %defattr(-,root,root)
 %doc doc/*.txt
 %_libdir/lib*.so
