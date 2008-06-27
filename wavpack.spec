@@ -1,12 +1,9 @@
 %define name wavpack
-%define version 4.41.0
-%define release %mkrel 2
+%define version 4.50.0
+%define release %mkrel 1
 
 %define major 1
 %define libname %mklibname %name %major
-
-#fixed2
-%{?!mkrel:%define mkrel(c:) %{-c: 0.%{-c*}.}%{!?_with_unstable:%(perl -e '$_="%{1}";m/(.\*\\D\+)?(\\d+)$/;$rel=${2}-1;re;print "$1$rel";').%{?subrel:%subrel}%{!?subrel:1}.%{?distversion:%distversion}%{?!distversion:%(echo $[%{mdkversion}/10])}}%{?_with_unstable:%{1}}%{?distsuffix:%distsuffix}%{?!distsuffix:mdk}}
 
 Summary: Lossless Audio compressor
 Name: %{name}
