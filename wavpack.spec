@@ -1,6 +1,6 @@
 %define name wavpack
-%define version 4.50.1
-%define release %mkrel 2
+%define version 4.60.0
+%define release %mkrel 1
 
 %define major 1
 %define libname %mklibname %name %major
@@ -9,7 +9,7 @@ Summary: Lossless Audio compressor
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: http://www.wavpack.com/%{name}-%{version}.tar.bz2
 License: BSD
 Group: Sound
 Url: http://www.wavpack.com/
