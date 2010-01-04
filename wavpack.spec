@@ -1,5 +1,5 @@
 %define name wavpack
-%define version 4.60.0
+%define version 4.60.1
 %define release %mkrel 1
 
 %define major 1
@@ -123,6 +123,7 @@ rm -rf $RPM_BUILD_ROOT
 %_bindir/wavpack
 %_bindir/wvunpack
 %_bindir/wvgain
+%_mandir/man1/*1*
 
 %files -n %libname
 %defattr(-,root,root)
