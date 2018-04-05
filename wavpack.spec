@@ -106,6 +106,7 @@ compression!
 %{_bindir}/wavpack
 %{_bindir}/wvunpack
 %{_bindir}/wvgain
+%{_bindir}/wvtag
 %{_mandir}/man1/*1*
 
 %files -n %{libname}
