@@ -113,7 +113,7 @@ compression!
 %{_libdir}/lib*.so.%{major}*
 
 %files -n %{devname}
-Remove, no file in upstream.
+#Remove, no file in upstream.
 #doc doc/*.txt
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/%{name}.pc
