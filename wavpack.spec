@@ -4,7 +4,7 @@
 
 Summary:	Lossless Audio compressor
 Name:		wavpack
-Version:	4.80.0
+Version:	5.1.0
 Release:	1
 License:	BSD
 Group:		Sound
