@@ -5,7 +5,7 @@
 Summary:	Lossless Audio compressor
 Name:		wavpack
 Version:	5.1.0
-Release:	3
+Release:	4
 License:	BSD
 Group:		Sound
 Url:		http://www.wavpack.com/
@@ -92,14 +92,14 @@ this means never having to choose between lossless and lossy
 compression!
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure2_5x --disable-static
-%make
+%configure --disable-static
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README ChangeLog
@@ -118,82 +118,3 @@ compression!
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/%{name}.pc
 %{_includedir}/wavpack
-
-
-
-
-%changelog
-* Fri May 06 2011 Oden Eriksson <oeriksson@mandriva.com> 4.60.1-3mdv2011.0
-+ Revision: 670783
-- mass rebuild
-
-* Sat Dec 04 2010 Oden Eriksson <oeriksson@mandriva.com> 4.60.1-2mdv2011.0
-+ Revision: 608151
-- rebuild
-
-* Mon Jan 04 2010 Emmanuel Andry <eandry@mandriva.org> 4.60.1-1mdv2010.1
-+ Revision: 486263
-- New version 4.60.1
-
-* Thu Oct 01 2009 Götz Waschk <waschk@mandriva.org> 4.60.0-1mdv2010.0
-+ Revision: 451984
-- new version
-- fix source URL
-
-* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 4.50.1-2mdv2010.0
-+ Revision: 427535
-- rebuild
-
-* Mon Jul 21 2008 Götz Waschk <waschk@mandriva.org> 4.50.1-1mdv2009.0
-+ Revision: 239311
-- new version
-
-* Fri Jun 27 2008 Götz Waschk <waschk@mandriva.org> 4.50.0-1mdv2009.0
-+ Revision: 229473
-- new version
-
-* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 4.41.0-2mdv2009.0
-+ Revision: 225924
-- rebuild
-
-  + Pixel <pixel@mandriva.com>
-    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
-
-* Wed Feb 20 2008 Frederik Himpe <fhimpe@mandriva.org> 4.41.0-1mdv2008.1
-+ Revision: 173350
-- New library policy devel name
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - fix spacing at top of description
-    - kill re-definition of %%buildroot on Pixel's request
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-* Tue May 22 2007 Götz Waschk <waschk@mandriva.org> 4.41.0-1mdv2008.0
-+ Revision: 29709
-- new version
-
-
-* Sat Dec 23 2006 Götz Waschk <waschk@mandriva.org> 4.40.0-1mdv2007.0
-+ Revision: 101915
-- new version
-- new major
-
-* Fri Nov 03 2006 Götz Waschk <waschk@mandriva.org> 4.32-2mdv2007.1
-+ Revision: 76182
-- Import wavpack
-
-* Tue Apr 25 2006 Götz Waschk <waschk@mandriva.org> 4.32-1mdk
-- update file list
-- New release 4.32
-
-* Thu Nov 17 2005 Götz Waschk <waschk@mandriva.org> 4.3-1mdk
-- New release 4.3
-
-* Wed Jun 29 2005 Götz Waschk <waschk@mandriva.org> 4.2-2mdk
-- fix buildrequires
-
-* Tue Jun 28 2005 Götz Waschk <waschk@mandriva.org> 4.2-1mdk
-- initial package
-
