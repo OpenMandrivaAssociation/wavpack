@@ -4,8 +4,8 @@
 
 Summary:	Lossless Audio compressor
 Name:		wavpack
-Version:	5.1.0
-Release:	4
+Version:	5.2.0
+Release:	1
 License:	BSD
 Group:		Sound
 Url:		http://www.wavpack.com/
@@ -102,7 +102,6 @@ compression!
 %make_install
 
 %files
-%doc README ChangeLog
 %{_bindir}/wavpack
 %{_bindir}/wvunpack
 %{_bindir}/wvgain
@@ -113,8 +112,7 @@ compression!
 %{_libdir}/lib*.so.%{major}*
 
 %files -n %{devname}
-#Remove, no file in upstream.
-#doc doc/*.txt
+%doc ChangeLog
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/%{name}.pc
 %{_includedir}/wavpack
