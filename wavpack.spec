@@ -117,4 +117,4 @@ compression!
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/%{name}.pc
 %{_libdir}/cmake/WavPack/
-%{includedir}/wavpack.h
+%{_includedir}/wavpack.h
