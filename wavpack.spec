@@ -11,6 +11,7 @@ Group:		Sound
 Url:		http://www.wavpack.com/
 Source0:	http://www.wavpack.com/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(ncurses)
+BuildRequires:  cmake
 
 %description
 WavPack is a completely open audio compression format providing
@@ -95,11 +96,11 @@ compression!
 %autosetup -p1
 
 %build
-%configure --disable-static
+%cmake
 %make_build
 
 %install
-%make_install
+%make_install -C build
 
 %files
 %{_bindir}/wavpack
