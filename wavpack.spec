@@ -116,4 +116,4 @@ compression!
 %doc ChangeLog
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/%{name}.pc
-%{_includedir}/wavpack
+#{_includedir}/wavpack
