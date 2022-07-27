@@ -11,6 +11,10 @@ Group:		Sound
 Url:		http://www.wavpack.com/
 Source0:	http://www.wavpack.com/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(ncurses)
+BuildRequires:  libtool
+BuildRequires:  pkgconfig(libxslt)
+BuildRequires:  autoconf
+BuildRequires:  automake
 
 %description
 WavPack is a completely open audio compression format providing
