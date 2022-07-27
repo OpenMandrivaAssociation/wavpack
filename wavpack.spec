@@ -110,7 +110,7 @@ compression!
 %{_mandir}/man1/*1*
 
 %files -n %{libname}
-%{_libdir}/lib*.so.%{major}*
+#{_libdir}/lib*.so.%{major}*
 
 %files -n %{devname}
 %doc ChangeLog
