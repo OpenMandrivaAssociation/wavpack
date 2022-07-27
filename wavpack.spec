@@ -96,7 +96,7 @@ compression!
 %autosetup -p1
 
 %build
-%cmake
+%cmake -DBUILD_SHARED_LIBS=ON
 %make_build
 
 %install
@@ -116,4 +116,5 @@ compression!
 %doc ChangeLog
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/%{name}.pc
-#{_includedir}/wavpack
+%{_libdir}/cmake/WavPack/
+%{includedir}/wavpack.h
