@@ -15,6 +15,7 @@ BuildRequires:  libtool
 BuildRequires:  pkgconfig(libxslt)
 BuildRequires:  autoconf
 BuildRequires:  automake
+BuildRequires:  gettext-devel
 
 %description
 WavPack is a completely open audio compression format providing
