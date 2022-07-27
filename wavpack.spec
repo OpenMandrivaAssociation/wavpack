@@ -119,6 +119,7 @@ autoreconf -vfi
 
 %files -n %{devname}
 %doc ChangeLog
+%doc %{_datadir}/doc/wavpack/
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/%{name}.pc
 %{_includedir}/wavpack
