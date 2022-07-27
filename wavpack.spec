@@ -95,7 +95,7 @@ compression!
 %autosetup -p1
 
 %build
-./autogen.sh
+autoreconf -ivf
 %configure --disable-static
 %make_build
 
