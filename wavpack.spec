@@ -95,7 +95,7 @@ compression!
 %autosetup -p1
 
 %build
-autoreconf -ivf
+autoreconf -vfi
 %configure --disable-static
 %make_build
 
