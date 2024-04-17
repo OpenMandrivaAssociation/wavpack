@@ -4,12 +4,12 @@
 
 Summary:	Lossless Audio compressor
 Name:		wavpack
-Version:	5.6.0
-Release:	2
+Version:	5.7.0
+Release:	1
 License:	BSD
 Group:		Sound
-Url:		http://www.wavpack.com/
-Source0:	http://www.wavpack.com/%{name}-%{version}.tar.bz2
+Url:		https://www.wavpack.com/
+Source0:	https://www.wavpack.com/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:  libtool
 BuildRequires:  pkgconfig(libxslt)
