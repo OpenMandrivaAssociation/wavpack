@@ -10,6 +10,8 @@ License:	BSD
 Group:		Sound
 Url:		https://www.wavpack.com/
 Source0:	https://www.wavpack.com/%{name}-%{version}.tar.bz2
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:  libtool
 BuildRequires:  pkgconfig(libxslt)
